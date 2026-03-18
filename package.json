@@ -57,6 +57,7 @@
     "clean": "shx rm -rf ./dist ./coverage ./docs-generator-dist",
     "test": "jest --coverage",
     "build": "npm run src:build",
+    "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts' 'tests/**/*.ts' 'docs-generator/**/*.ts'",
     "lint:fix": "eslint 'src/**/*.ts' 'tests/**/*.ts' 'docs-generator/**/*.ts' --fix",
     "madge": "npx madge --circular --warning --extensions ts ./"
