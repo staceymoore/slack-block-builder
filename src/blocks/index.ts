@@ -7,6 +7,7 @@ import { FileBuilder, FileParams } from './file';
 import { HeaderBuilder, HeaderParams } from './header';
 import { ImageBuilder, ImageParams } from './image';
 import { InputBuilder, InputParams } from './input';
+import { MarkdownBuilder, MarkdownParams } from './markdown';
 import { SectionBuilder, SectionParams } from './section';
 import { VideoBuilder, VideoParams } from './video';
 
@@ -25,6 +26,8 @@ export type {
   ImageParams,
   InputBuilder,
   InputParams,
+  MarkdownBuilder,
+  MarkdownParams,
   SectionBuilder,
   SectionParams,
   VideoBuilder,
@@ -121,6 +124,18 @@ export function Input(params?: InputParams): InputBuilder {
 
 /**
  * @param {Object} [params] Parameters passed to the constructor.
+ * @param {string} [params.blockId] Sets a string to be an identifier for any given block in a view or message.
+ * @param {string} [params.text] Sets the markdown text content.
+ *
+ * {@link https://docs.slack.dev/reference/block-kit/blocks/markdown-block|View in Slack API Documentation}
+ */
+
+export function Markdown(params?: MarkdownParams): MarkdownBuilder {
+  return new MarkdownBuilder(params);
+}
+
+/**
+ * @param {Object} [params] Parameters passed to the constructor.
  * @param {string} [params.blockId] Sets a string to be an identifier for the block, that will be available in interaction payloadsSets a string to be an identifier for any given block in a view or message. This is sent back to your app in interaction payloads and view submissions for your app to process.
  * @param {string} [params.text] Sets the text to be displayed in the section block.
  *
@@ -157,6 +172,7 @@ const blocks = {
   Header,
   Image,
   Input,
+  Markdown,
   Section,
   Video,
 };

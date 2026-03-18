@@ -1,5 +1,6 @@
 export enum BlockType {
   Section = 'section',
+  Markdown = 'markdown',
   Actions = 'actions',
   Context = 'context',
   Input = 'input',
