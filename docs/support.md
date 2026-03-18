@@ -18,6 +18,7 @@ Below is a list of supported components and how to access them in **Block Builde
 | Header              | Block              | **Yes**             | `Blocks.Header()`              | [View Docs](/blocks/header.md)
 | Image               | Block              | **Yes**             | `Blocks.Image()`               | [View Docs](/blocks/image.md)
 | Input               | Block              | **Yes**             | `Blocks.Input()`               | [View Docs](/blocks/input.md)
+| Markdown            | Block              | **Yes**             | `Blocks.Markdown()`            | [View Docs](/blocks/markdown.md)
 | Section             | Block              | **Yes**             | `Blocks.Section()`             | [View Docs](/blocks/section.md)
 | Video               | Video              | **Yes**             | `Blocks.Video()`               | [View Docs](/blocks/video.md)
 | Button              | Element            | **Yes**️             | `Elements.Button()`            | [View Docs](/elements/button.md)
@@ -38,4 +39,3 @@ Below is a list of supported components and how to access them in **Block Builde
 | Confirmation Dialog | Composition Object | **Yes**             | `Bits.ConfirmationDialog()`    | [View Docs](/bits/confirmation-dialog.md)
 | Option              | Composition Object | **Yes**             | `Bits.Option()`                | [View Docs](/bits/option.md)
 | Option Group        | Composition Object | **Yes**             | `Bits.OptionGroup()`           | [View Docs](/bits/option-group.md)
-

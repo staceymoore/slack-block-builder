@@ -3,10 +3,6 @@ export class BlockBuilderError extends Error {
     super(message);
     this.name = 'BlockBuilderError';
 
-    const errorWithStackTrace = Error as ErrorConstructor & {
-      captureStackTrace(targetObject: object, constructorOpt?: Function): void;
-    };
-
-    errorWithStackTrace.captureStackTrace(this, this.constructor);
+    Error.captureStackTrace(this, this.constructor);
   }
 }

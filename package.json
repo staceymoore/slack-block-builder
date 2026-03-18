@@ -44,7 +44,7 @@
     "slack-bolt"
   ],
   "scripts": {
-    "src:build": "tsc -p ./tsconfig.build.json",
+    "src:build": "tsc -p ./tsconfig.json",
     "src:lint": "eslint 'src/**/*.ts' --fix",
     "docs:build": "tsc -p ./tsconfig.docs.json",
     "docs:lint": "eslint 'docs-generator/**/*.ts' --fix",
@@ -64,6 +64,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.22",
+    "@types/node": "14.18.63",
     "@typescript-eslint/eslint-plugin": "^4.20.0",
     "@typescript-eslint/parser": "^4.20.0",
     "codecov": "^3.8.1",
